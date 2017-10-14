@@ -21,6 +21,23 @@
 		<script>
 			mui.init();
 		</script>
+		
+		<script>
+    var content = document.querySelector('.mui-content');
+    var toggle = document.getElementById('M_Toggle_Grid_Carded');
+    var card = document.querySelector('.mui-card');
+    var grid = document.querySelector('.mui-grid-view');
+    toggle.addEventListener('toggle', function(event) {
+        var isActive = event.detail.isActive;
+        if (isActive) {
+            card.appendChild(grid);
+            card.style.display = '';
+        } else {
+            content.appendChild(grid);
+            card.style.display = 'none';
+        }
+    });
+</script>
 	</head>
 
 	<body>
@@ -67,21 +84,5 @@
     </div>
 
 </div>
-<script>
-    var content = document.querySelector('.mui-content');
-    var toggle = document.getElementById('M_Toggle_Grid_Carded');
-    var card = document.querySelector('.mui-card');
-    var grid = document.querySelector('.mui-grid-view');
-    toggle.addEventListener('toggle', function(event) {
-        var isActive = event.detail.isActive;
-        if (isActive) {
-            card.appendChild(grid);
-            card.style.display = '';
-        } else {
-            content.appendChild(grid);
-            card.style.display = 'none';
-        }
-    });
-</script>
 </body>
 </html>
