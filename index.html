@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 
 <head>
@@ -249,5 +249,92 @@
     <!--&lt;!&ndash;页脚，放置补充信息或支持的操作&ndash;&gt;-->
     <!--<div class="mui-card-footer">页脚</div>-->
 <!--</div>-->
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Tool</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="http://statics.webkfa.com/mui/mui.min.css">
+		<script src="http://statics.webkfa.com/mui/mui.min.js"></script>
+		<script src="http://statics.webkfa.com/mui/app.js"></script>
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+		</style>
+		<script>
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+
+    <div class="mui-card" style="background-color: #ffffff;">
+        <ul class="mui-table-view mui-grid-view mui-grid-9">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('查看|http://139.199.103.170/qq/jk/top.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-home"></span>-->
+                    <img src="img/01.png"/>
+                    <div class="mui-media-body">获赞排行</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('弹出|http://www.st856.cn/');"  href="#">
+                    <!--<span class="mui-icon mui-icon-sms"><span class="mui-badge">New</span></span>-->
+                    <img src="img/02.png"/>
+                    <div class="mui-media-body">80卡盟</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/ks/jk/tool/getVideoUrl.php');"  href="#">
+                    <!--<span class="mui-icon mui-icon-calendar"></span>-->
+                <img src="img/03.png"/>
+                    <div class="mui-media-body">快手解析</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('查看|打开|http://139.199.103.170/qq/tool/chaizi/chaizitool.php');"  href="#">
+                    <!--<span class="mui-icon mui-icon-chat"></span>-->
+                <img src="img/04.png"/>
+                    <div class="mui-media-body">拆字工具</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/qianmingshengcheng/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-category"></span>-->
+                <img src="img/05.png"/>
+                    <div class="mui-media-body">个签生成</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/qqcejixiong/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-map"></span>-->
+                <img src="img/06.png"/>
+                    <div class="mui-media-body">QQ测吉凶</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/renpinjisuanqi/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-search"></span>-->
+                <img src="img/07.png"/>
+                <div class="mui-media-body">推算人品</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/wangmingsheji/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-phone"></span>-->
+                <img src="img/08.png"/>
+                <div class="mui-media-body">网名设计</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+                    <!--<span class="mui-icon mui-icon-cog"></span>-->
+                <img src="img/load.png"/>
+                    <div class="mui-media-body">有待开发..</div></a></li>
+        </ul> 
+    </div>
+
+</div>
+<script>
+    var content = document.querySelector('.mui-content');
+    var toggle = document.getElementById('M_Toggle_Grid_Carded');
+    var card = document.querySelector('.mui-card');
+    var grid = document.querySelector('.mui-grid-view');
+    toggle.addEventListener('toggle', function(event) {
+        var isActive = event.detail.isActive;
+        if (isActive) {
+            card.appendChild(grid);
+            card.style.display = '';
+        } else {
+            content.appendChild(grid);
+            card.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
