@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Tool</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="http://139.199.103.170/qq/img/img/mui.css">
+		<script src="http://139.199.103.170/qq/img/img/mui.js"></script>
+		<script src="http://139.199.103.170/qq/img/img/app.js"></script>
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			li{
+				background-color:#ffffff;
+			}
+			.mui-table-view {
+  background-color: #FFF;
+}
+			img{
+				width:32px;
+				height:32px;
+			}
+		</style>
+		<script>
+			mui.init();
+		</script>
+		
+		<script>
+    var content = document.querySelector('.mui-content');
+    var toggle = document.getElementById('M_Toggle_Grid_Carded');
+    var card = document.querySelector('.mui-card');
+    var grid = document.querySelector('.mui-grid-view');
+    toggle.addEventListener('toggle', function(event) {
+        var isActive = event.detail.isActive;
+        if (isActive) {
+            card.appendChild(grid);
+            card.style.display = '';
+        } else {
+            content.appendChild(grid);
+            card.style.display = 'none';
+        }
+    });
+</script>
+	</head>
+
+	<body>
+    <p style= "padding:8px;"><h3>会员等级介绍</h3>
+    如何升级会员等级：会员充值一个月增加一级。<br/>
+    <span style="font-size:15px;">例：充值了三个月可升级为至尊3级，使用一个月后可用会员时间为两个月，会员等级降为至尊二级，以此类推</span>
+    <br/>会员等级相对的赞数量如下
+    <ol>
+      <li>至尊1级——每日9888赞</li>
+      <li>至尊2级——每日10888赞</li>
+      <li>至尊3级——每日11888赞</li>
+      <li>至尊4级——每日12888赞</li>
+      <li>至尊5级——每日13888赞</li>
+      <li>至尊6级——每日14888赞</li>
+      <li>至尊7级——每日15888赞</li>
+      <li>至尊8级——每日16888赞</li>
+    <ol/>
+    </p>
+</body>
+</html>
