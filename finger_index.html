@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Tool</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="http://139.199.103.170/qq/img/img/mui.css">
+		<script src="http://139.199.103.170/qq/img/img/mui.js"></script>
+		<script src="http://139.199.103.170/qq/img/img/app.js"></script>
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			li{
+				background-color:#ffffff;
+			}
+			.mui-table-view {
+  background-color: #FFF;
+}
+			img{
+				width:32px;
+				height:32px;
+			}
+		</style>
+		<script>
+			mui.init();
+		</script>
+		
+		<script>
+    var content = document.querySelector('.mui-content');
+    var toggle = document.getElementById('M_Toggle_Grid_Carded');
+    var card = document.querySelector('.mui-card');
+    var grid = document.querySelector('.mui-grid-view');
+    toggle.addEventListener('toggle', function(event) {
+        var isActive = event.detail.isActive;
+        if (isActive) {
+            card.appendChild(grid);
+            card.style.display = '';
+        } else {
+            content.appendChild(grid);
+            card.style.display = 'none';
+        }
+    });
+</script>
+	</head>
+
+	<body>
+<marquee style="font-size:13px;color:#FF6A6A;backgroung-color:#fff;padding-top:5px;">若使用卡慢，可以尝试切换大区进行互赞哦</marquee>
+
+
+    <div class="mui-card" style="background-color: #ffffff;">
+        <ul class="mui-table-view mui-grid-view mui-grid-9"  style="background-color: #ffffff;">
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('查看|http://139.199.103.170/qq/jk/top.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-home"></span>-->
+                    <img src="http://139.199.103.170/qq/img/img/01.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">获赞排行</div></a></li>
+		
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/ks/jk/tool/getVideoUrl.php');"  href="#">
+                    <!--<span class="mui-icon mui-icon-calendar"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/03.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">快手解析</div></a></li>
+		 <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('弹出|http://order.917ka.com/');"  href="#">
+                    <!--<span class="mui-icon mui-icon-calendar"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/km.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">卡密查询</div></a></li>
+		
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('弹出|http://5kzn.cn/');"  href="#">
+                    <!--<span class="mui-icon mui-icon-calendar"></span>-->
+                <img src="http://5kzn.cn/tp.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">QQ代刷网</div></a></li>
+		
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/chaizi/chaizitool.php');"  href="#">
+                    <!--<span class="mui-icon mui-icon-chat"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/04.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">拆字工具</div></a></li>
+		
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('弹出|http://903km.cn');" href="#">
+                
+                <img src="http://139.199.103.170/qq/img/img/zuan.png"/>
+                <div class="mui-media-body" style="font-size:12px;">一心卡盟</div></a></li>
+		
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/qianmingshengcheng/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-category"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/05.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">个签生成</div></a></li>
+		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('弹出|http://201050.top');" href="#">
+                
+                <img src="http://139.199.103.170/qq/img/img/zuan.png"/>
+                <div class="mui-media-body" style="font-size:12px;">秒单代刷网</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/qqcejixiong/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-map"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/06.png"/>
+                    <div class="mui-media-body" style="font-size:12px;">QQ测吉凶</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/renpinjisuanqi/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-search"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/07.png"/>
+		    <div class="mui-media-body" style="font-size:12px;">推算人品</div></a></li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a onclick="javascript:alert('打开|http://139.199.103.170/qq/tool/wangmingsheji/index.php');" href="#">
+                    <!--<span class="mui-icon mui-icon-phone"></span>-->
+                <img src="http://139.199.103.170/qq/img/img/08.png"/>
+                <div class="mui-media-body" style="font-size:12px;">网名设计</div></a></li>
+        </ul> 
+    </div>
+
+</div>
+</body>
+</html>
