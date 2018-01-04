@@ -36,6 +36,7 @@ $(document).ready(function(e) {
   			var percentVal = '0%';
   			progress_bar.width(percentVal);
   			percent.html(percentVal);
+			$(".imglist").empty();
   		}, 
   		uploadProgress: function(event, position, total, percentComplete) { 
   			var percentVal = percentComplete + '%'; //获得进度 
@@ -47,7 +48,6 @@ $(document).ready(function(e) {
 			if(data.status == 1){
 				var src = data.url;  
 				var attstr= '<img src="'+src+'" style="width:100%;height:auto;">'; 
-				$(".imglist").empty();
 				$(".imglist").append(attstr);
 				$(".res").html("<p style='padding:10px;background:green;color:#ffffff;'>上传照片成功，图片大小："+data.size+"K<br>请联系QQ1400376680进行图片审核.</p>");
 			}else{
