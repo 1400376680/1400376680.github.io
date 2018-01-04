@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表白墙投稿系统</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width , initial-scale=1.0 , user-scalable=0 , minimum-scale=1.0 , maximum-scale=1.0" />
+<script type='text/javascript' src='http://139.199.103.170/biaobai/js/jquery-2.0.3.min.js'></script>
+<script type='text/javascript' src='http://139.199.103.170/biaobai/js/jquery.form.js'></script>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h3 style="text-align:center;color:#999999;">表白墙图片上传系统</h3>
+<div style="width:100%;margin:10 auto; border:solid 1px #999999; overflow:hidden;">
+  <form id='myupload' action='upload.php' method='post' enctype='multipart/form-data'>
+    <input type="file" id="uploadphoto" name="uploadfile" value="点我选择照片"  style="display:none;" />
+  </form>
+  <div class="imglist">
+	<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514527575686&di=56fc36e98be4725e3a840039cab1f73a&imgtype=0&src=http%3A%2F%2Fn1.itc.cn%2Fimg8%2Fwb%2Frecom%2F2016%2F05%2F20%2F146370564816334121.JPEG" style="width: 100%;height: auto;">
+  </div>
+  <p class="res"></p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped" ><span class="percent">50%</span></div>
+  </div>
+  <a href="javascript:void(0);" onclick="uploadphoto.click()" class="uploadbtn">点我选择照片</a>
+<script type="text/javascript">
+$(document).ready(function(e) {
+   var progress = $(".progress"); 
+   var progress_bar = $(".progress-bar");
+   var percent = $('.percent');
+   $("#uploadphoto").change(function(){
+  	 $("#myupload").ajaxSubmit({ 
+  		dataType:  'json', //数据格式为json 
+  		beforeSend: function() { //开始上传 
+  			progress.show();
+  			var percentVal = '0%';
+  			progress_bar.width(percentVal);
+  			percent.html(percentVal);
+  		}, 
+  		uploadProgress: function(event, position, total, percentComplete) { 
+  			var percentVal = percentComplete + '%'; //获得进度 
+  			progress_bar.width(percentVal); //上传进度条宽度变宽 
+  			percent.html(percentVal); //显示上传进度百分比 
+  		}, 
+  		success: function(data) {
+			 
+			if(data.status == 1){
+				var src = data.url;  
+				var attstr= '<img src="'+src+'" style="width:100%;height:auto;">'; 
+				$(".imglist").empty();
+				$(".imglist").append(attstr);
+				$(".res").html("<p style='padding:10px;background:green;color:#ffffff;'>上传照片成功，图片大小："+data.size+"K<br>请联系QQ1400376680进行图片审核.</p>");
+			}else{
+				$(".res").html(data.content);
+			}
+  			progress.hide();		
+  		}, 
+  		error:function(xhr){ //上传失败 
+  		   alert("上传失败"); 
+  		   progress.hide(); 
+  		} 
+  	}); 
+   });
+
+});
+</script>
+</body>
+</html>
