@@ -6,7 +6,6 @@
 打开|http://139.199.103.170/qq/img/img/04.png|拆字工具|http://139.199.103.170/qq/tool/chaizi/chaizitool.php*
 弹出|http://139.199.103.170/qq/img/img/zuan.png|一心卡盟|http://903km.cn*
 打开|http://139.199.103.170/qq/img/img/05.png|个签生成|http://139.199.103.170/qq/tool/qianmingshengcheng/index.php*
-弹出|http://139.199.103.170/qq/img/img/zuan.png|秒单代刷网|http://yyoko.cn*
 弹出|http://139.199.103.170/finger/nl.jpg|QQ代刷网|http://nlds.nphpji.cn*
 打开|http://139.199.103.170/qq/img/img/06.png|QQ测吉凶|http://139.199.103.170/qq/tool/qqcejixiong/index.php*
 打开|http://139.199.103.170/qq/img/img/07.png|推算人品|http://139.199.103.170/qq/tool/renpinjisuanqi/index.php*
