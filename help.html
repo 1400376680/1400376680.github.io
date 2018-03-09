@@ -1,62 +1,75 @@
+
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Help~</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="//dev.dcloud.net.cn/mui/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//dev.dcloud.net.cn/mui/dist/css/mui.min.css?v=2017-02-15 11:53:40 +0800">
-    <script src="//dev.dcloud.net.cn/mui/dist/js/mui.min.js?v=2017-02-15 11:53:40 +0800"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <style>
-        html,
-        body {
-            overflow:hidden;
-            padding:8px;
-            background-color: #efeff4;
-        }
-        hr{
-            background:#fff;
-            border:1px solid #fff;
-            border-radius:50%;
-        }
-    </style>
-
-    <script type="text/javascript">
-        $(function () {
-            $("button").click(function () {
-                alert($(this).children("span").text());
-            });
-        });
-    </script>
-
-</head>
-
-<body>
-<p style="color:blue;">问：QQ提示每天只能给500好友点赞怎么办？</p>
-    <p style="color:green;">答：遇到这种情况可以把当前登录聊天的QQ号码换一个号,然后Finger内帐号不要变，开始点赞即可，如果是不经常点赞的小号请先养号，像正常一样每天去手动点一些赞，找好友聊聊天，资料什么的完善一下，一周左右差不多就可以了。</p>
-    <hr/>
-<p style="color:blue;">问：我开通了会员为什么没有显示？</p>
-    <p style="color:green;">答：若卡密开通后没有显示会员的话请退出软件重新进一下，如果还是不行就把软件清除缓存数据，然后重新打开软件输入QQ帐号后点击一百个赞即可。</p>
-    <hr/>
-    <p style="color:blue;">问：为什么会出现帐号冻结情况？</p>
-    <p style="color:green;">答：此问题由于小号不经常点赞不活跃然后忽然大量互赞导致帐号异常，请用小号手动互赞一段时间，没事的话聊聊天，完善一下资料，发点说说什么的，把小号养一周左右，然后再进行互赞，记住：互赞被冻结不是软件问题，是号的问题。</p>
-    <hr/>
-    
-        <p style="color:blue;">问：购买了卡密但是不会使用？</p>
-    <p style="color:green;">答：购买卡密后如果不知道卡密请去软件首页下方的Finger社区内进行查询，查询出来后的卡密格式为QE开头W结束，复制卡密后粘贴在软件首页的卡密输入框，然后点击开通即可。</p>
-    <hr/>
-            <p style="color:blue;">问：为什么会偶尔维护？</p>
-    <p style="color:green;">答：由于同时在线人数众多，造成软件卡漫，一般维护周期最长为一小时。</p>
-    <hr/>
-    
-<p style="color:blue;">更多问题正在搜集中...</p>
-    <p style="color:green;">Finger~</p>
-    <hr/>
-
-    
-    </body>
+	<head>
+		<title>Finger帮助</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="http://123.206.95.169/include/style/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="http://123.206.95.169/include/style/index.css">
+		<script src="http://123.206.95.169/include/js/jquery-1.11.3.min.js"></script>
+		<script src="http://123.206.95.169/include/js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="http://123.206.95.169/include/js/index.js"></script>
+		<script>
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+				};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>		
+	</head>
+	<body>
+		 <div data-role="page" class="page1">
+			<div data-role="header">
+				<h1>Finger常见问题</h1>
+			</div>
+			<div data-role="content" style="height: auto;">
+				<div data-role="collapsible-set" data-iconpos="none" style="height: auto;box-shadow: #83b9eb 0px -1px 8px;">
+					<div data-role="collapsible">
+						<h3>1.我是会员每天怎么只能给500人点赞？</h3>
+						<p>您好，遇到这种情况可以把当前登录聊天的QQ号码换一个号,Finger内的QQ帐号不要变，继续开始点赞即可。</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>2.为什么QQ帐号会冻结？</h3>
+						<p>您好，此问题由于小号不经常点赞不活跃然后忽然大量互赞导致帐号异常，请用小号手动互赞一段时间，没事的话聊聊天，完善一下资料，发点说说什么的，把小号养一周左右，然后再进行互赞，记住：互赞被冻结不是软件问题，是号的问题。</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>3.怎么使用QQ消息轰炸功能？</h3>
+						<p>您好，QQ消息轰炸我们做了隐藏处理，需要使用的话点击Finger首页的QQ头像即可呼出QQ轰炸功能！</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>4.我购买了卡密但找不到卡密？怎么办？</h3>
+						<p>您好，可以点击软件下方第二个选项进入Finger社区，然后点击卡密查询，查询之后找到QE开头的就是卡密，复制之后粘贴到软件里点开通即可。</p>
+					</div>	
+					<div data-role="collapsible">
+						<h3>5.Finger会员手机重置或清除数据怎么办？</h3>
+						<p>您好，这个问题您只要在会员到期事件内，进入软件输入QQ点一百赞即可。</p>
+					</div>	
+					<div data-role="collapsible">
+						<h3>6.卡密能给多少人用？</h3>
+						<p>您好，Finger卡密对应只能给一个QQ进行充值，不可多个QQ号码使用一个卡密。</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>7.开通了Finger会员有什么特权？</h3>
+						<p>您好，特权如下<br/>1.尊享单次点赞5000的特权，告别频繁点击的烦恼
+							<br/>2.会员用户尊享每日互赞20000特权，普通用户每天只有3888赞
+							<br/>3.会员软件内尊享优先回赞特权
+							<br/>4.会员身份拥有独特的黄金铭牌，彰显高贵</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>更多问题收集中...</h3>
+						<p>感谢您对Finger的支持</p>
+					</div>
+				</div>
+			</div>
+		  </div>
+		
+	</body>
 </html>
